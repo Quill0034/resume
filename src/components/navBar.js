@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import avatar from '.././avatar.jpeg';
 export default class NavBar extends React.Component {
     render () {
