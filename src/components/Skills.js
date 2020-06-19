@@ -17,8 +17,8 @@ export default class Skills extends React.Component {
                         <li className="list-inline-item"><i className="fab fa-wordpress" /></li>
                         <li className="list-inline-item"><i className="fab fa-npm" /></li>
                         <li className="list-inline-item"><i className="fab fa-java" /></li>
-
                     </ul>
+                    <p>Selenium, Cypress, Jest, HTML, CSS, Java, Javascript, ReactJs, NodeJs, MongoDB, Oracle SQL, Office 365, </p>
                     <div className="subheading mb-3 text-info">Core Skills</div>
                     <ul className="fa-ul mb-0">
                         <li>
