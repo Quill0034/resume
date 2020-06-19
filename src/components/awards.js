@@ -7,7 +7,7 @@ export default class Awards extends React.Component {
             <div className="resume-section" id="awards">
                 <div className="resume-section-content">
                     <ScrollAnimation animateIn="fadeIn">
-                        <h2 className="mb-5">Awards &amp; Certifications</h2>
+                        <h2 className="mb-5 text-danger">Awards &amp; Certifications</h2>
                         <ul className="fa-ul mb-0">
                             <li>
                             <span className="fa-li"><i className="fas fa-trophy text-warning" /></span>Academic Achievement Award for First-Year Students

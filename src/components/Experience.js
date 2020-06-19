@@ -8,10 +8,10 @@ export default class Experience extends React.Component {
             <div className="resume-section" id="experience">
             <div className="resume-section-content">
               <ScrollAnimation animateIn="fadeIn">
-                <h2 className="mb-5">Experience</h2>
+                <h2 className="mb-5 text-danger">Experience</h2>
                 <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
                   <div className="flex-grow-1">
-                    <h3 className="mb-0">Business Analyst - Software Tester - UX designer</h3>
+                    <h3 className="mb-0 text-info">Business Analyst - Software Tester - UX designer</h3>
                     <div className="subheading mb-3">Equal Opportunities West - Ace Project Space</div>
                     <p>Developed a full-stack application for staff management system</p>
                     <ul className="fa-ul mb-0">
@@ -39,7 +39,7 @@ export default class Experience extends React.Component {
                 </div>
                 <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
                   <div className="flex-grow-1">
-                    <h3 className="mb-0">Line Cook</h3>
+                    <h3 className="mb-0 text-info">Line Cook</h3>
                     <div className="subheading mb-3">Garbonzos Pizza - Canad Inns</div>
                     <ul className="fa-ul mb-0">
                       <li>

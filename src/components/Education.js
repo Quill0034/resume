@@ -7,10 +7,10 @@ export default class Education extends React.Component {
             <div className="resume-section" id="education">
             <div className="resume-section-content">
               <ScrollAnimation animateIn="fadeIn">
-                <h2 className="mb-5">Education</h2>
+                <h2 className="mb-5 text-danger">Education</h2>
                 <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
                   <div className="flex-grow-1">
-                    <h3 className="mb-0">Red River College, Winnipeg, MB</h3>
+                    <h3 className="mb-0 text-info">Red River College, Winnipeg, MB</h3>
                     <div className="subheading mb-3">Diploma in Business Technology Management</div>
                     <div>main completed course works: Project Management, Business System Design, Business System Testing, Business Requirements Gathering, Project Methodologies, Management Information System, Network Architect, Database Management System, Web Development. </div>
                     <p>GPA: 4.44/4.5</p>
@@ -19,7 +19,7 @@ export default class Education extends React.Component {
                 </div>
                 <div className="d-flex flex-column flex-md-row justify-content-between">
                   <div className="flex-grow-1">
-                    <h3 className="mb-0">University of Economics Ho Chi Minh City, Vietnam</h3>
+                    <h3 className="mb-0 text-info">University of Economics Ho Chi Minh City, Vietnam</h3>
                     <div className="subheading mb-3">Bachelor of Business Administration</div>
                     <p>GPA: 4.0/5.0</p>
                   </div>

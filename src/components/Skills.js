@@ -7,8 +7,8 @@ export default class Skills extends React.Component {
             <div className="resume-section" id="skills">
                 <div className="resume-section-content">
                     <ScrollAnimation animateIn="fadeIn">
-                    <h2 className="mb-5">Skills</h2>
-                    <div className="subheading mb-3">Programming Languages &amp; Tools</div>
+                    <h2 className="mb-5 text-danger">Skills</h2>
+                    <div className="subheading mb-3 text-info">Programming Languages &amp; Tools</div>
                     <ul className="list-inline dev-icons">
                         <li className="list-inline-item"><i className="fab fa-html5" /></li>
                         <li className="list-inline-item"><i className="fab fa-css3-alt" /></li>
@@ -19,7 +19,7 @@ export default class Skills extends React.Component {
                         <li className="list-inline-item"><i className="fab fa-java" /></li>
 
                     </ul>
-                    <div className="subheading mb-3">Core Skills</div>
+                    <div className="subheading mb-3 text-info">Core Skills</div>
                     <ul className="fa-ul mb-0">
                         <li>
                         <span className="fa-li"><i className="fas fa-check" /></span>Analytical skills: Analyzed customers requirements and proposed possible solutions
