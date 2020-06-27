@@ -1,7 +1,5 @@
 import React, {useState, useEffect} from 'react';
 
-
-
 function WeatherFetch () {
     function getTime(){
 	return (new Date()).toLocaleTimeString()
@@ -17,8 +15,8 @@ function WeatherFetch () {
         fetch('https://api.openweathermap.org/data/2.5/weather?q=winnipeg,ca&APPID=' +key+ '&units=metric')
         .then((res) => res.json())
         .then((data) => {
-            setFeelsLike(data.main.feels_like);
-            setMainTemp(data.main.temp);
+            setFeelsLike(Math.round(data.main.feels_like));
+            setMainTemp(Math.round(data.main.temp));
             // setDescription(data.weather[0].description);
             setMain(data.weather[0].main);
             setIconID(data.weather[0].icon);
@@ -28,10 +26,9 @@ function WeatherFetch () {
     const time = getTime();
     return (
         <div className="weather" style={{width: '100vh', position: 'fixed', display: 'flex', alignItems:'flex-end', flexDirection: 'column'}}> 
-        <h5>Winnipeg weather   ({time})</h5> 
-        <p>{mainTemp} ℃ - Feels Like: {feelsLike} ℃</p>
-        <p>{main}     <img src={"http://openweathermap.org/img/wn/" + iconID + "@2x.png"} /></p>
-        
+        <h5>Winnipeg    ({time}) <button onClick={() => window.location.reload(false)}><i className="fa fa-share"/></button></h5> 
+        <p>{mainTemp} ℃  Feels Like: {feelsLike} ℃</p>
+        <p>{main}     <img src={"http://openweathermap.org/img/wn/" + iconID + "@2x.png"} alt="weatherIcon" /></p>
         
         </div>
     )
