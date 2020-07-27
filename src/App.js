@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import NavBar from './components/navBar';
 import About from './components/about';
@@ -8,12 +8,26 @@ import Education from './components/education';
 import Awards from './components/awards';
 import WeatherFetch from './components/weatherFetch';
 
+
 function App() {
+
+  const [clicked, setClicked] = useState(false);
+
+  let a = {};
+    if (clicked) {
+      a = {background: 'black', color: 'white' };
+    }
+    else {a={};}
+
+
   return (
-    <div id="page-top">
+    <div id="page-top" style={a }>
     <NavBar/>
+    
     <div className="container-fluid p-0">
+    <div><button style={{display:'block', margin:'auto'}} className="btn-info" onClick={() => setClicked(!clicked)}>dark mode </button></div>
       <WeatherFetch />
+      
       <About />
       <hr className="m-0" />
       <Skills />
@@ -23,7 +37,6 @@ function App() {
       <Education />
       <hr className="m-0" />
       <Awards />
-
     </div>
 
     </div>
@@ -31,3 +44,8 @@ function App() {
 }
 
 export default App;
+
+
+  
+
+
