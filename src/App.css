@@ -26,6 +26,15 @@ body {
   outline: 0 !important;
 }
 
+
+.darkMode h1 {
+  color: white;
+}
+
+.darkMode h5 {
+  color: white;
+}
+
 hr {
   box-sizing: content-box;
   height: 0;

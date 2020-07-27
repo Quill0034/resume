@@ -14,18 +14,21 @@ function App() {
   const [clicked, setClicked] = useState(false);
 
   let a = {};
+  let dark ="";
+  let darkMode="";
     if (clicked) {
       a = {background: 'black', color: 'white' };
+      dark ="darkMode";
+      darkMode="light mode";
     }
-    else {a={};}
-
+    else {a={}; dark ="";darkMode="dark mode"}
 
   return (
-    <div id="page-top" style={a }>
+    <div id="page-top" style={a} className={dark}>
     <NavBar/>
     
     <div className="container-fluid p-0">
-    <div><button style={{display:'block', margin:'auto'}} className="btn-info" onClick={() => setClicked(!clicked)}>dark mode </button></div>
+    <div><button style={{display:'block', margin:'auto'}} className="btn-info" onClick={() => setClicked(!clicked)}>{darkMode} </button></div>
       <WeatherFetch />
       
       <About />
